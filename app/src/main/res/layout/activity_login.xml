@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_login">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/red_rectangle" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="367dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continuing as"
+            android:textSize="30dp"
+            android:textColor="#000"
+            android:fontFamily="@font/futura_pt_demibold"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="40dp"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="-1dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Provider"
+            android:textColor="#000"
+            android:layout_marginLeft="40dp"
+            android:textSize="30dp"
+            android:fontFamily="@font/futura_pt_demibold"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="40dp">
+
+        </TextView>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_white_small"
+            android:text="Login"
+            android:textSize="20dp"
+            android:fontFamily="@font/futura_pt_demibold"
+            android:textColor="#FF0000"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="115dp"/>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_red_medium"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/futura_pt_demibold"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="115dp"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_white_large"
+            android:fontFamily="@font/futura_pt_demibold"
+            android:text="Continue with Google"
+            android:textSize="20dp"
+            android:textColor="#FF0000"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="180dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/google_logo"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="191dp"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_blue_large"
+            android:text="Continue with Facebook"
+            android:textColor="#0000FF"
+            android:textSize="20dp"
+            android:fontFamily="@font/futura_pt_demibold"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="247dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fb_logo"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="260dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter as a guest"
+            android:textSize="20dp"
+            android:fontFamily="@font/futura_pt_demibold"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="320dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

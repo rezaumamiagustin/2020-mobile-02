@@ -10,11 +10,18 @@
         android:id="@+id/imageView2"
         android:layout_width="32dp"
         android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:background="@drawable/arrow_left_black"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="35dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="60dp"
         android:layout_height="20dp"
         android:fontFamily="@font/futura_pt_demibold"
@@ -29,204 +36,308 @@
         app:layout_constraintVertical_bias="0.059" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Personal Info"
-        android:textSize="20dp"
-        android:textColor="#000"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="624dp"
         android:fontFamily="@font/futura_pt_demibold"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="70dp" />
+        android:text="Personal Info"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/profile_picture"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="117dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.007" />
 
     <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
         android:background="@drawable/edit_icon"
-        tools:layout_editor_absoluteX="232dp"
-        tools:layout_editor_absoluteY="167dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_pt_demibold"
         android:text="About Me"
         android:textSize="20dp"
-        android:fontFamily="@font/futura_pt_demibold"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="220dp"/>
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="356dp"
         android:layout_height="78dp"
+        android:layout_marginTop="248dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="I think this is one of the most important qualities to have as a driver: Show responbility for other traffic participants."
         android:textColor="#000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="250dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="285dp" />
-
-    <TextView
+    <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
         android:text="Full Name"
         android:textSize="20dp"
-        android:fontFamily="@font/futura_pt_demibold"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="350dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
+        android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Jonathan Doe"
         android:textColor="#000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="354dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="345dp" />
-
-    <TextView
+    <ImageView
+        android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:fontFamily="@font/futura_pt_demibold"
         android:text="Email"
         android:textSize="20dp"
-        android:fontFamily="@font/futura_pt_demibold"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="405dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="jonathan.designer@gmail.com"
         android:textColor="#000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="405dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="400dp" />
-
-    <TextView
+    <ImageView
+        android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/futura_pt_demibold"
         android:text="Gender"
         android:textSize="20dp"
-        android:fontFamily="@font/futura_pt_demibold"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="460dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <TextView
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Male"
         android:textColor="#000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="326dp"
-        tools:layout_editor_absoluteY="460dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="450dp" />
-
-    <TextView
+    <ImageView
+        android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
         android:text="Phone No."
         android:textSize="20dp"
-        android:fontFamily="@font/futura_pt_demibold"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="507dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <TextView
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="+123423423423"
         android:textColor="#000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="232dp"
-        tools:layout_editor_absoluteY="507dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="500dp" />
-
-    <TextView
+    <ImageView
+        android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
         android:text="City"
         android:textSize="20dp"
-        android:fontFamily="@font/futura_pt_demibold"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="563dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <TextView
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Ottawa"
         android:textColor="#000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="305dp"
-        tools:layout_editor_absoluteY="563dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="555dp" />
-
-    <TextView
+    <ImageView
+        android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Address"
-        android:textSize="20dp"
-        android:fontFamily="@font/futura_pt_demibold"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="615dp" />
+        android:background="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="617dp" />
 
     <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Address"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/textView14"
         android:layout_width="230dp"
         android:layout_height="57dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="296 Elgin St, Ottawa, ON x 1M3, Canada"
         android:textAlignment="textEnd"
         android:textColor="#000"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="610dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="55dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="625dp" />
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/grey_line_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

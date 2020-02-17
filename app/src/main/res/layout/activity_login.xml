@@ -61,9 +61,8 @@
             android:textColor="#000"
             android:textSize="30dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"/>
 
-        </TextView>
 
         <TextView
             android:id="@+id/textView3"
